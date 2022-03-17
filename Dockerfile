@@ -1,4 +1,4 @@
-FROM php:7.2-fpm-alpine3.15
+FROM php:7.2-fpm-alpine
 
 ENV ACCEPT_EULA=Y
 
