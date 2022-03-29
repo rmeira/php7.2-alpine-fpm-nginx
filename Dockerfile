@@ -39,6 +39,7 @@ WORKDIR /var/www
 # COPY NGINX CONFIG
 COPY ./nginx/mime.types /etc/nginx/mime.types
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+RUN touch /run/nginx/nginx.pid
 
 # COPY PHP CONFIGS
 COPY ./php/php.ini /usr/local/etc/php/php.ini
